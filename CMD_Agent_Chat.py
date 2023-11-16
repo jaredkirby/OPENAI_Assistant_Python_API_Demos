@@ -11,9 +11,8 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-
-org_id = load_dotenv("ORG_ID")
-api_key = os.environ.get("API_KEY")
+org_id = os.getenv("OPENAI_ORG_ID")
+api_key = os.getenv("OPENAI_API_KEY")
 
 
 #### General Helper Functions ####
@@ -86,7 +85,7 @@ def get_multiple_choice_multiple_input(options: dict):
 
 def setup_assistant_chat(the_assistant: OAI_Assistant):
     """
-    Takes assistant API object and returns the ID of the selected assistant Uses chat to facillitate selection process.
+    Takes assistant API object and returns the ID of the selected assistant Uses chat to facilitate selection process.
 
     Args:
         the_assistant (OAI_Assistant): An instance of the OAI_Assistant class.
@@ -135,7 +134,7 @@ def setup_thread(
         # change the thread to the thread with the given ID
         thread_id = the_assistant.change_thread(thread_id=input_thread_id)
     else:
-        # create a thread with the deafult name
+        # create a thread with the default name
         thread_id = the_assistant.change_thread(thread_name="Default_Thread")
 
     the_assistant.current_thread = thread_id
@@ -237,7 +236,10 @@ def main_run(assistant: OAI_Assistant, assistant_id, thread_id):
                     tool_properties=tool_properties,
                 )
                 # add the tool to the metadata dict
-                correct_info = {"type": "function", "function": tool_metadata}
+                correct_info = {
+                    "type": "function",
+                    "function": tool_metadata,
+                }
                 # add the tool to the tools list
                 tools_list.append(correct_info)
 

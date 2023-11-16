@@ -495,6 +495,7 @@ class OAI_Assistant:
             extra_body: Add additional JSON properties to the request
             timeout: Override the client-level default timeout for this request, in seconds
         """
+
         return self.client.assistants.list(
             limit=limit,
             order=order,
