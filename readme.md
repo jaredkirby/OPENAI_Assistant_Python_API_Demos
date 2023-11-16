@@ -9,7 +9,7 @@ This repository contains two Python scripts for interacting with OpenAI's API:
 ### Commands
 - swapT - Swap Thread
 - swapA - Swap Assistant via Number selection
-- tool - Give the agent your chatting to some function tools. Youll want to do this when you start a chat with an assistant.
+- tool - Give the agent your chatting to some function tools. You'll want to do this when you start a chat with an assistant.
 
 ## Setup
 1. Clone the repository.
@@ -29,7 +29,7 @@ Chat away!
 - **Customizable Assistants**: Tailor your chat assistant to fit specific roles or requirements, making it versatile for a wide array of customer service scenarios, tool them up and watch them go!
 - **Hot-Swap Agents**: Swap out agents mid - thread by writing 'swapA'
 - **Change Threads**: Change threads/Start a new one by writing 'new'
-- **Function Calling**: You can use 'tool' to open a numbered menu of avaliable function calls that can be assigned dynamically to the assistant.
-- **D-I-Y FUNCTIONS**: Assistants CAN write their own functions with smart prompting and static tool use. I will incorporate a tooler_assistant that is conditioned to provide the correct tools for re-tooling assistants. As a tldr: You assistant needs read_file and write_to_file and to be told about dyanmic_functions.py and function_metadata.json and how the function metatdata handling works (specifically that it should always read the files before writing to them and always include the whole file in the rewrite)
+- **Function Calling**: You can use 'tool' to open a numbered menu of available function calls that can be assigned dynamically to the assistant.
+- **D-I-Y FUNCTIONS**: Assistants CAN write their own functions with smart prompting and static tool use. I will incorporate a tooler_assistant that is conditioned to provide the correct tools for re-tooling assistants. As a tl;dr: You assistant needs read_file and write_to_file and to be told about dyanmic_functions.py and function_metadata.json and how the function metatdata handling works (specifically that it should always read the files before writing to them and always include the whole file in the rewrite)
 
 ### Share any uses!
