@@ -19,7 +19,7 @@ This repository contains two Python scripts for interacting with OpenAI's API:
 - `assistant_manager.py`: Initialize with OpenAI credentials and use its methods.
 - `example_cmd_chat.py`: Run to see a command-line interface in action.
 
-Start a chat. Select a Assistant from the avaliable assistants on your account. (Chat path to create assistants is in the plans)
+Start a chat. Select a Assistant from the available assistants on your account. (Chat path to create assistants is in the plans)
 Select a thread (if you have previous ones saved locally via the script)
 Chat away!
 
