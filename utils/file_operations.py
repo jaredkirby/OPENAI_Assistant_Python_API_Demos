@@ -1,4 +1,4 @@
-## Staple functions to use in the chat
+# Staple functions to use in the chat
 
 
 def write_to_file(file_name, text):
